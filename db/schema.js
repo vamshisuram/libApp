@@ -21,3 +21,8 @@
 
 */
 
+var Book = describe('Book', function () {
+
+    set('restPath', pathTo.books);
+});
+
