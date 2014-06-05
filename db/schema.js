@@ -21,8 +21,18 @@
 
 */
 
-var Book = describe('Book', function () {
-  property('title', String);
-  set('restPath', pathTo.books);
+var mongoOpt = { url: 'mongodb://localhost/nineleaps_library' };
+
+schema('mongodb', mongoOpt, function() {
+  var Book = describe('Book', function () {
+    property('title', String);
+    property('category', String);
+    property('authors', String, {default: new Array()});
+    property('avaiability', String);
+    property('summary', String);
+    property('level', String);
+    property('numOfCopies', String);
+    set('restPath', pathTo.books);
+  });
 });
 

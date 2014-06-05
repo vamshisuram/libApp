@@ -16,10 +16,14 @@
 <div class="row">
     <div class="span12">
         <% if (books.length > 0) { %>
-        <table class="table table-striped">
+        <table id="books_index" class="table table-striped">
             <thead>
                 <tr>
                     <th>Title</th>
+                    <th>Category</th>
+                    <th>Level</th>
+                    <th>Rating</th>
+                    <th>Availability</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -27,6 +31,11 @@
                 <% books.forEach(function (book) { %>
                 <tr>
                     <td><strong><%- link_to(book.title, pathTo.book(book)) %></strong></td>
+                    <td><strong><%= book.category %></strong></td>
+                    <td><strong><%= book.level %></strong></td>
+                    <td><strong><%= book.rating %></strong></td>
+                    <td><strong><%= book.availability %></strong></td>
+
                     <td>
                         <%- link_to('<i class="icon-edit"></i> Edit', pathTo.edit_book(book), {class: 'btn btn-mini'}) %>
                         <%- link_to('<i class="icon-remove icon-white"></i> Delete', pathTo.book(book), {class: 'btn btn-mini btn-danger', method: 'delete', remote: true, jsonp: '(function (u) {location.href = u;})'}) %>

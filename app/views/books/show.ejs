@@ -5,12 +5,13 @@
 </ul>
 
 <div class="page-header">
-    <h1>Details of book</h1>
+    <h1><%= book.title %></h1>
 </div>
 
 <table class="table table-bordered">
     <tbody>
-        
+        <tr><th>Title</th><td><strong><%= book.title %></strong></td></tr>
+        <tr><th>Category</th><td><%= book.category %></td></tr>
     </tbody>
 </table>
 

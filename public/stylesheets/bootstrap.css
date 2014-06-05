@@ -6035,3 +6035,15 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+/* CUSTOM STYLES */
+
+.table-striped thead th
+{
+  background-color: #424241;
+  color: #ffffff;
+}
+
+.dataTable thead tr {
+  background: #424241;
+}
