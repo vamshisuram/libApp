@@ -1,4 +1,6 @@
 libApp
 ======
 
-A books' library management application.
+A books' library management application using CompoundJS.
+
+Under construction...
