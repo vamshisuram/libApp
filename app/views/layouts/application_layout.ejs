@@ -11,9 +11,11 @@
     <body>
         <div class="navbar">
             <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand" href="/">Nineleaps Library</a>
-                </div>
+                <a class="brand" href="/">Nineleaps Library</a>
+                    <ul class="nav">
+                        <li><a href="<%- pathTo.users() %>">users</a></li>
+                        <li><a href="<%- pathTo.books() %>">books</a></li>
+                    </ul>
             </div>
         </div>
 

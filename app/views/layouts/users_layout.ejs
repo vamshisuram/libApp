@@ -11,8 +11,8 @@
             <div class="navbar-inner">
                 <a class="brand" href="/">Nineleaps Library</a>
                     <ul class="nav">
-                        <li><a href="<%- pathTo.users() %>">users</a></li>
-                        <li><a class="active" href="<%- pathTo.books() %>">books</a></li>
+                        <li><a class="active" href="<%- pathTo.users() %>">users</a></li>
+                        <li><a href="<%- pathTo.books() %>">books</a></li>
                     </ul>
             </div>
         </div>
@@ -44,7 +44,7 @@
 <%- contentFor('javascripts') %>
 <script type ="text/javascript">
 jQuery(document).ready( function () {
-   jQuery('#books_index').DataTable();
+   jQuery('#users_index').DataTable();
 
 } );
 </script>
